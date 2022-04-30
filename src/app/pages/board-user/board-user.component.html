@@ -1,0 +1,27 @@
+<div class="container mt-4 mb-4">
+
+    <div class="row">
+    
+    <div class="col-lg-3 mt-3" *ngFor="let fd of packageData;index as i">
+    
+    <div class="packagebox mt-3 mb-3 " >
+    
+    <img src="{{fd.packageImg}}" />
+    
+    <h1>{{fd.packageName}}</h1>
+    
+    <p>{{fd.packageDetails}}</p>
+    
+    <p>{{fd.packageCost | currency:'USD' }}</p>
+    
+    <br/>
+    
+    <a class="buybtn">Buy Now &nbsp;<i class="bi bi-bag-heart"></i></a>
+    
+    </div>
+    
+    </div>
+    
+    </div>
+    
+</div>

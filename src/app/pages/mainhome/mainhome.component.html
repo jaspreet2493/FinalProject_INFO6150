@@ -1,0 +1,85 @@
+<div class="banner">
+
+    <div class="content">
+    
+    <h1 class= "mb-5"><span style="color: yellowgreen; font-weight: bold;">B</span>oston <span style="color: yellowgreen; font-weight: bold;">T</span>ravel</h1>
+    
+    <a routerLink="menu">SEE PACKAGES<i class="bi bi-arrow-right"></i></a>
+    
+    </div>
+    
+    </div>
+    
+    <div class="container mt-5 mb-5">
+    
+    <h1 class="text-center">Exciting places to <span class="highlight"> Travel and Explore</span></h1>
+    
+    <div class="row mt-5">
+    
+    <div class="col-lg-4 mt-2">
+    
+    <div class="stepBox">
+    
+    <h1>1</h1>
+    
+    <p>Select package</p>
+    
+    </div>
+    
+    </div>
+    
+    <div class="col-lg-4 mt-2">
+    
+    <div class="stepBox">
+    
+    <h1>2</h1>
+    
+    <p>Fill the Details</p>
+    
+    </div>
+    
+    </div>
+    
+    <div class="col-lg-4 mt-2">
+    
+    <div class="stepBox">
+    
+    <h1>3</h1>
+    
+    <p>Final Checkout</p>
+    
+    </div>
+    
+    </div>
+    
+    </div>
+    
+    </div>
+    
+    <!--packagebox-->
+    
+    <div class="container mt-4 mb-4">
+    
+    <h1 class="text-center">Customers <span class="highlight">Favourite Places </span></h1>
+    
+    <div class="row">
+    
+    <div class="col-lg-3 mt-3" *ngFor="let fd of packageData;index as i">
+    
+    <div class="packagebox" *ngIf="i<=3" >
+    
+    <img src="{{fd.packageImg}}" />
+    
+    <h1>{{fd.packageName}}</h1>
+    
+    <p>{{fd.packageCost | currency:'USD' }}</p>
+    
+    </div>
+    
+    </div>
+    
+    </div>
+    
+    <a class="viewmorebtn">view more <i class="bi bi-arrow-right"></i></a>
+    
+    </div>
